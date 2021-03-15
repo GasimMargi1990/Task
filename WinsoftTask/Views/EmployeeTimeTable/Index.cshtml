@@ -1,0 +1,22 @@
+﻿@model WinsoftTask.Models.EmployeeTimeTable
+
+
+
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bind DropdownList Details</title>
+</head>
+<body>
+    <div>
+        Select User: @Html.DropDownListFor(m => m.EmpNo, new SelectList(Model.EmpNos, "EmpNo", "EmpNo"), "Select EmpNo")
+    </div>
+</body>
+</html>
